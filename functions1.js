@@ -17,7 +17,7 @@ printhi()//here console will you output of statement written in the body
 // the values which we give while the invokement of the function willl also act a local parametre for the function...
 
 // lets talk about arrow function
-/*synatx fucntiontpe functionname =(here we pass parametre if any)=>
+/*synatx fucntiontype functionname =(here we pass parametre if any)=>
    {
 
      }  */
@@ -43,3 +43,40 @@ printhi()//here console will you output of statement written in the body
       return avg
    }
    console.log(avgofnumbers(2,3))
+
+
+   const marks={
+     
+    english:90,
+    maths:100,
+    phy:88,
+    chem:78
+   }
+//   for(let i=0;i<Object.keys(marks).length;i++)
+  // {
+//    console.log(Object.keys(marks)[i]+"are"+marks[Object.keys(marks)[i]])
+
+     
+//}
+
+for(let keys in marks)
+{
+    console.log("the marks in"+" "+keys+" "+"are"+ " "+ marks[keys])
+}
+
+
+
+console.log("its line 69")
+
+
+const meanofFive=(a,b,c,d,e)=>
+{
+    let avg=(a+b+c+d+e)/5
+    return avg
+}
+
+console.log("average of 5 numbers are "+""+meanofFive(1,2,3,4,5))
+
+
+
+
